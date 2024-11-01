@@ -6,3 +6,5 @@
 - [31. Next Permutation](https://leetcode.com/problems/next-permutation/description)
 - [48. Rotate Image](https://leetcode.com/problems/rotate-image/submissions/1439548326)
   hint: transpose + reverse
+- [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/submissions/1440056199)
+  hint: without sorting -> take `arr = [0] * 26`, for every character, `arr[ord(ch) - ord('a')] += 1`. This will sort each woord. Use `str(arr)` as key.
