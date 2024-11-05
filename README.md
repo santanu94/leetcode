@@ -10,3 +10,5 @@
   hint: without sorting -> take `arr = [0] * 26`, for every character, `arr[ord(ch) - ord('a')] += 1`. This will sort each woord. Use `str(arr)` as key.
 - [1329. Sort the Matrix Diagonally](https://leetcode.com/problems/sort-the-matrix-diagonally/description)
   hint: ![diagonal movement](hint/img/diagonal.png)
+- [724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/}
+  hint: although this looks like a two pointer, but we should use two pointer primarily when we intend to reduct the range or we can find definite answe with the two pointers. In this case use cumulitive/prefix sum.
