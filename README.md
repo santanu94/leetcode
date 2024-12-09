@@ -27,4 +27,4 @@
   ![stock_buy_sell_multiple](hint/img/stock_buy_sell_multiple.png)
 - [Stock Buy and Sell – Max one Transaction Allowed](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/buy-stock-2)
   hint: becuse we can only look forward, instead of using a window (we cannot use a window because we have no way of reducing it), we can use double pointers that move from left to right, one pointer to mark sell and one to mark buy. Since we cannot sell before buy, i.e., we cannot pair current low value with any large value previously seen, we have to reset the sell pointer everytime we move the buy pointer.
-  ![stock_buy_sell_singel](hint/img/stock_buy_sell_multiple.png)
+  ![stock_buy_sell_singel](hint/img/stock_buy_sell_single.png)
