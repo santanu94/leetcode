@@ -30,4 +30,8 @@
   ![stock_buy_sell_singel](hint/img/stock_buy_sell_single.png)
 - [Kadane's Algorithm](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/kadanes-algorithm-1587115620)
   hint: for max subarray we are more interested in max sum produced by +ve numbers.
-  ![Video Reference](https://www.youtube.com/watch?v=AHZpyENo7k4)
+  [Video Reference](https://www.youtube.com/watch?v=AHZpyENo7k4)
+- [Maximum Product Subarray](https://www.geeksforgeeks.org/batch/gfg-160-problems/track/arrays-gfg-160/problem/maximum-product-subarray3604)
+  hint: this can be solved with slight modification to kadane's algorithm. All we need to do is do a forward pass and the a backward pass. This helps eliminate odd number of -ve numbers.
+  ![maximum_product_subarray_my_kadane](hint/img/maximum_product_subarray_my_kadane.png)
+  [Video Reference](https://www.youtube.com/watch?v=hnswaLJvr6g)
