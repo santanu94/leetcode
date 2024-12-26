@@ -41,3 +41,5 @@
   hint - [Video Reference](https://www.youtube.com/watch?v=Za8V4wkZKkM)
 - [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/)
 - [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
+- [1129. Shortest Path with Alternating Colors](https://leetcode.com/problems/shortest-path-with-alternating-colors/description/)
+  hint: with bfs, if path count is needed, most of the time path count should be added to queue along with neighbour nodes. Plus if graph is bi-directional with different weights along different directions, then for visited set, we also need to add in this format `f"{nei}_{nei_edge}"` because if we just chech `if nei in visited: continue` then we don't take into account this neighbor revisiting through a different edge. Check submitted solution.
