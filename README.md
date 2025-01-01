@@ -48,3 +48,5 @@
 ### Linked List
 - [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)
   hint: in order to remove node we need prev node, but here there is no way of accessing prev node. So we will instead traverse the linked list till the end and replace current node value with next value and finally drop the last node.
+- [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/)
+  hint: [Video Reference](https://www.youtube.com/watch?v=vlrxs-LPni4&list=PLpIkg8OmuX-LH398-_ZcuHiRueOdsJbXU&index=5)
