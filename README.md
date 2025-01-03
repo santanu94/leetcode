@@ -52,3 +52,5 @@
   hint: [Video Reference](https://www.youtube.com/watch?v=vlrxs-LPni4&list=PLpIkg8OmuX-LH398-_ZcuHiRueOdsJbXU&index=5)
 - [382. Linked List Random Node](https://leetcode.com/problems/linked-list-random-node/description)
   hint: consider linked list `[a, b, c, d, e, f]`. Prob of selecting a is 1. Then looking at prob of not changing (i.e., selecting) `a` between `a` and `b` is 1/2, then prob of not changing `a` between `a`, `b` and `c` is 2/3, next 3/4, .... n-2/n-1, n-1/n. So if we multiply all of them, the final prob of selecting is 1/n. Check submission.
+- [109. Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/)
+  hint: time complexity nlogn. Recursive divide and conquere (binary search). Recurssively find mid point, attach left and right. Check solution.
