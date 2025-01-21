@@ -62,6 +62,8 @@
   hint: If we need to find nth node from the last, in a single pass, we can move to nth item from the front, then immediately put a second pointer at head position and increment both of them till current pointer becomes null. Then the second pointer will point to nth node from the end. [Video Reference](https://www.youtube.com/watch?v=TxryJMerDwE&list=PLpIkg8OmuX-LH398-_ZcuHiRueOdsJbXU&index=10)
 - [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/)
   hint: use recurssion for problems like this, flattening of linked list, flattening of doubly linked list. [Video Reference](https://www.youtube.com/watch?v=8yLiGS4ntHw&list=PLpIkg8OmuX-LH398-_ZcuHiRueOdsJbXU&index=11)
+- [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/)
+  hint: approach 1 is to use two loops and a hashmap or array. first create new nodes with values of given linked list and store each node in an array or hashmap. In the second loop set value of next and randon pointer. [Reference Code](https://leetcode.com/problems/copy-list-with-random-pointer/solutions/6280241/video-solution-with-hashmap-python-javascript-java-c/). Approach 2 uses no extra space. [Video Reference](https://www.youtube.com/watch?v=q570bKdrnlw)
 ### String
 - [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
   hint: Approach 1 is to generate all permutations. Here is the code for that: ![permutation_of_strings](hint/img/permutation_of_strings.png)
