@@ -64,6 +64,8 @@
   hint: use recurssion for problems like this, flattening of linked list, flattening of doubly linked list. [Video Reference](https://www.youtube.com/watch?v=8yLiGS4ntHw&list=PLpIkg8OmuX-LH398-_ZcuHiRueOdsJbXU&index=11)
 - [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/)
   hint: approach 1 is to use two loops and a hashmap or array. first create new nodes with values of given linked list and store each node in an array or hashmap. In the second loop set value of next and randon pointer. [Reference Code](https://leetcode.com/problems/copy-list-with-random-pointer/solutions/6280241/video-solution-with-hashmap-python-javascript-java-c/). Approach 2 uses no extra space. [Video Reference](https://www.youtube.com/watch?v=q570bKdrnlw)
+- [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
+  hint: at the end, do not forget to check if carry is greater than 0. If yes, then create another node with carry.
 ### String
 - [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
   hint: Approach 1 is to generate all permutations. Here is the code for that: ![permutation_of_strings](hint/img/permutation_of_strings.png)
