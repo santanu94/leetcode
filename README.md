@@ -78,3 +78,5 @@ But the better approach is to identify that permutations of all strings will hav
 `Tip: If array has both +ve and -ve numbers, we cannot use sliding windoow.`
 
 `Tip: If order is important, we cannot use sorting`
+
+`Note: sub-array is contiguous, sub sequence is non contiguous`
