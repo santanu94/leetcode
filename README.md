@@ -80,3 +80,7 @@ But the better approach is to identify that permutations of all strings will hav
 `Tip: If order is important, we cannot use sorting`
 
 `Note: sub-array is contiguous, sub sequence is non contiguous`
+
+`Tip: A different way of doing sliding window is, hashing the prefix sum along with index as key-value in dict. Here, if we need to find sub-array that sum to value k, we can check if k - current_sum in dict. If yes, then dict[k-current_sum] to curren_index is the sub array. Check video: [Video Reference](https://www.youtube.com/watch?v=frf7qxiN2qU)`
+
+`Tip: If sub array problem with sum, check prefix or prefix + hashing`
