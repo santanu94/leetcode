@@ -74,3 +74,7 @@ But the better approach is to identify that permutations of all strings will hav
   hint: a very easy problem with a very easy trap to fall into. Lets take pattern `"abba"` and string `"dog dog dog dog"`, this should throw error. Check submission for solution. [Submission](https://leetcode.com/problems/word-pattern/submissions/1514890238/)
 - [1071. Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/description/)
   hint: [Solution](https://leetcode.com/problems/greatest-common-divisor-of-strings/solutions/3024822/greatest-common-divisor-of-strings/)
+### Array
+`Tip: If array has both +ve and -ve numbers, we cannot use sliding windoow.`
+
+`Tip: If order is important, we cannot use sorting`
