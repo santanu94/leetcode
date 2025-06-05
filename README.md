@@ -91,3 +91,5 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
 1) Store {prefix_sum: count} in hash
 2) Initialize the hash with {0: 1}
 ```
+- [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/)
+  hint: [video reference](https://www.youtube.com/watch?v=xvNwoz-ufXA)
