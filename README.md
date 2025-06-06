@@ -91,5 +91,9 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
 1) Store {prefix_sum: count} in hash
 2) Initialize the hash with {0: 1}
 ```
+
+`Tip: If order is not important, ask yourself this question: If I sort this array, will it make my job easier?`
 - [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/)
   hint: [video reference](https://www.youtube.com/watch?v=xvNwoz-ufXA)
+- [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
+  hint: if we sort the array, then it becomes easier to merge the groups. Sort, then loop over all entries and check if current start <= prev end current end > previous end. If yes then merge. [Solution code](https://leetcode.com/problems/merge-intervals/submissions/1655509120/)
