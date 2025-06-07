@@ -104,3 +104,6 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
   hint: [video reference](https://www.youtube.com/watch?v=xvNwoz-ufXA)
 - [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
   hint: if we sort the array, then it becomes easier to merge the groups. Sort, then loop over all entries and check if current start <= prev end current end > previous end. If yes then merge. [Solution code](https://leetcode.com/problems/merge-intervals/submissions/1655509120/)
+### Binary Tree
+- [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/)
+  hint: [Solution](https://www.youtube.com/watch?v=sWf7k1x9XR4)
