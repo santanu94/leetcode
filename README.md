@@ -46,6 +46,12 @@
 - [1319. Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected/description/)
   hint: if this case we are not just checking cycle, we are counting the number of edges we have that makes a cycle (i.e., number of cycles), e.g., A<->B<->C<->A, here C<->A edge can be removed. To do this we need to cache C<->A edge as well, or else we can go through ths edge twice, once via A<->B<->C<->A and once via A<->C. So even if a node is already visited, we need to check if the same edge was used to form a previous cycle.
 ### Linked List
+`Tip: if we need to maintain order like a list, but also be able to change order of elements inside the list in time O(1), instead of O(n), we should use linked list.`
+
+```Tip: If we are frequently inserting or deleting nodes at both ends (head/tail) or in the middle, it is almost always better to use dummy head and tail nodes. This will remove edge case checks like:
+if node.next is not None and node.prev is not None:
+  node.next.prev = node.prev.Next
+```
 - [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)
   hint: in order to remove node we need prev node, but here there is no way of accessing prev node. So we will instead traverse the linked list till the end and replace current node value with next value and finally drop the last node.
 - [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/)
