@@ -48,7 +48,8 @@
 ### Linked List
 `Tip: if we need to maintain order like a list, but also be able to change order of elements inside the list in time O(1), instead of O(n), we should use linked list.`
 
-```Tip: If we are frequently inserting or deleting nodes at both ends (head/tail) or in the middle, it is almost always better to use dummy head and tail nodes. This will remove edge case checks like:
+```
+Tip: If we are frequently inserting or deleting nodes at both ends (head/tail) or in the middle, it is almost always better to use dummy head and tail nodes. This will remove edge case checks like:
 if node.next is not None and node.prev is not None:
   node.next.prev = node.prev.Next
 ```
