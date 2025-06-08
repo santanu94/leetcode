@@ -14,7 +14,7 @@
   hint: although this looks like a two pointer, but we should use two pointer primarily when we intend to reduct the range or we can find definite answe with the two pointers. In this case use cumulitive/prefix sum.
 - [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/)
   hint: ![selecting quare block in matrix](hint/img/select_square_block.png)
-  in order to group `n*n` block in a 2D matrix, divide rows by n and columns by n.
+  in order to group `n*n` block in a 2D matrix, divide rows by n and columns by n. [Full Video Solution](https://www.youtube.com/watch?v=TjFXEUCMqI8)
 - [976. Largest Perimeter Triangle](https://leetcode.com/problems/largest-perimeter-triangle/description/)
   hint: in oorder to find largest perimeter of a triangle, we can sort it and start from last. if the last (greatest) 3 number don't follow `side1 + side2 > side3`, `side2 + side3 > side1` and `side3 + side1 > side2` then omit greatest and check next 3 greatest numbers. Because if side[n], side[n-1] and side[n-2] can't form tringle then it means `side[n-1] + side[n-2] < side[n]`. So ideally we can only check if `side[n-1] + side[n-2] > side[n]` we can return their sum.
 - [645. Set Mismatch](https://leetcode.com/problems/set-mismatch/description)
