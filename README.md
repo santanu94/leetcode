@@ -109,3 +109,8 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
   hint: [Solution](https://www.youtube.com/watch?v=sWf7k1x9XR4)
 - [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/)
   hint: [My Submission - easy to understand](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/submissions/1656998875/), [Elegant Solution](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/submissions/1657107800/)
+### TODO LIST
+- [Kadane's Algorithm | Maximum Subarray Sum | Finding and Printing](https://www.youtube.com/watch?v=AHZpyENo7k4)
+- [Top 5 Most Common Graph Algorithms for Coding Interviews](https://www.youtube.com/watch?v=utDu3Q7Flrw&t=405s)
+- [House Robber - Leetcode 198 - Python Dynamic Programming](https://www.youtube.com/watch?v=73r3KWiEvyk)
+- [L15. Sudoko Solver | Backtracking](https://www.youtube.com/watch?v=FWAIf_EVUKE)
