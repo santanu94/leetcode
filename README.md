@@ -109,6 +109,10 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
   hint: [Solution](https://www.youtube.com/watch?v=sWf7k1x9XR4)
 - [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/)
   hint: [My Submission - easy to understand](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/submissions/1656998875/), [Elegant Solution](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/submissions/1657107800/)
+### DP and Backtracking
+`Tip: if we are computing count, max, min, True/False -> it is likely DP. If we are computing all combinations/answers -> likely backtracking.`
+- [139. Word Break](https://leetcode.com/problems/word-break/description/)
+  hint: we can think about splitting a word in to `word = A, B, C, D`. Now we can explore different paths like `word = AB, C, D` or `word = ABC, D` or `word = A, BC, D`. If we memoize D, then we can reuse D multiple times. Lets say combination `A, BC, D` is valid and D is cached. Then we will return True the moment we get to this combination, but memoization helped us reduce computation for combination, `ABC, D` and `A, BC, D` as it was already calculated during `A, B, C, D`.
 ### TODO LIST
 - [Kadane's Algorithm | Maximum Subarray Sum | Finding and Printing](https://www.youtube.com/watch?v=AHZpyENo7k4)
 - [Top 5 Most Common Graph Algorithms for Coding Interviews](https://www.youtube.com/watch?v=utDu3Q7Flrw&t=405s)
