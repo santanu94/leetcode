@@ -118,3 +118,4 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
 - [Top 5 Most Common Graph Algorithms for Coding Interviews](https://www.youtube.com/watch?v=utDu3Q7Flrw&t=405s)
 - [House Robber - Leetcode 198 - Python Dynamic Programming](https://www.youtube.com/watch?v=73r3KWiEvyk)
 - [L15. Sudoko Solver | Backtracking](https://www.youtube.com/watch?v=FWAIf_EVUKE)
+- [213. House Robber II](https://leetcode.com/problems/house-robber-ii/)
