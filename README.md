@@ -56,7 +56,7 @@ Tips: Use BFS/DFS from sorce to destination if question is:
 - [1319. Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected/description/)
   hint: if this case we are not just checking cycle, we are counting the number of edges we have that makes a cycle (i.e., number of cycles), e.g., A<->B<->C<->A, here C<->A edge can be removed. To do this we need to cache C<->A edge as well, or else we can go through ths edge twice, once via A<->B<->C<->A and once via A<->C. So even if a node is already visited, we need to check if the same edge was used to form a previous cycle.
 - [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)
-  hint: the question says, we have to go from a cell to both ocean, so we have one source and two destinations. Hence it is better to do dfs/bfs in reverse. [DFS Code](https://leetcode.com/problems/pacific-atlantic-water-flow/submissions/1677660719/)
+  hint: the question says, we have to go from a cell to both ocean, so we have one source and two destinations. Hence it is better to do dfs/bfs in reverse. [DFS Code](https://leetcode.com/problems/pacific-atlantic-water-flow/submissions/1677660719/) [BFS Code](https://leetcode.com/problems/pacific-atlantic-water-flow/submissions/1677673026/)
 ### Linked List
 `Tip: if we need to maintain order like a list, but also be able to change order of elements inside the list in time O(1), instead of O(n), we should use linked list.`
 
