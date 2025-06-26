@@ -1,5 +1,15 @@
 # Revisit
 ### Graph
+```
+Tips: Use BFS/DFS from sorce to destination if question is:
+- Can I go from cell A to cell B?
+- How far can I reach from this point?
+- What is the shortest/longest path from A to B?
+
+  Use BFS/DFS from destination(s) (i.e. reverse) when:
+- From which cell can water/air/people reach X?
+- What are all possible startig points that can eventually reach this end conditioon?
+```
 - [Detect cycle in undirected graph](https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
 - [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)
 - [15. 3Sum](https://leetcode.com/problems/3sum/description)
@@ -45,6 +55,8 @@
   hint: with bfs, if path count is needed, most of the time path count should be added to queue along with neighbour nodes. Plus if graph is bi-directional with different weights along different directions, then for visited set, we also need to add in this format `f"{nei}_{nei_edge}"` because if we just chech `if nei in visited: continue` then we don't take into account this neighbor revisiting through a different edge. Check submitted solution.
 - [1319. Number of Operations to Make Network Connected](https://leetcode.com/problems/number-of-operations-to-make-network-connected/description/)
   hint: if this case we are not just checking cycle, we are counting the number of edges we have that makes a cycle (i.e., number of cycles), e.g., A<->B<->C<->A, here C<->A edge can be removed. To do this we need to cache C<->A edge as well, or else we can go through ths edge twice, once via A<->B<->C<->A and once via A<->C. So even if a node is already visited, we need to check if the same edge was used to form a previous cycle.
+- [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)
+  hint: the question says, we have to go from a cell to both ocean, so we have one source and two destinations. Hence it is better to do dfs/bfs in reverse. [DFS Code](https://leetcode.com/problems/pacific-atlantic-water-flow/submissions/1677660719/)
 ### Linked List
 `Tip: if we need to maintain order like a list, but also be able to change order of elements inside the list in time O(1), instead of O(n), we should use linked list.`
 
