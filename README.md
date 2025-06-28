@@ -10,6 +10,57 @@ Tips: Use BFS/DFS from sorce to destination if question is:
 - From which cell can water/air/people reach X?
 - What are all possible startig points that can eventually reach this end conditioon?
 ```
+```
+Tips: When to use disjoint set union:
+- Problems revolve around groups, components or connectivity.
+- Problem says: check if there is cycle in undirected graph
+- Problem says: These things are similar/belong together/can be merged based on some condition
+- Problem says: detect whether adding an edge would create a cycle or while sorting edges whether to include them
+- There are repeated online queries about connectedness over time (maybe if two nodes are connected after K updates)
+
+Don't use Union Find when:
+- Directed graph with cycles
+- You need shortest path or distances
+- Order matters (e.g., topological sorting)
+- You need to explore actual paths
+```
+```
+Use BFS when you want the shortest number of steps in an unweighted graph
+Typical Scenarios:
+- All eedges have same cost (unit cost)
+- Grid traversal problems (minimum steps)
+- Finding shortest path in maze using only directions (↑↓←→)
+- First occurance/closest solution needed
+- Tree order level traversal
+
+Use DFS when you want to explore all paths or components deeply
+Typical use case:
+- Find all paths/combinations (backtracking)
+- Cycle detection in a graph
+- Topological sort
+- Connected components/island counting
+- Reachability/path existance
+
+Use Dijkstra's Algorithm when you want to find the minimum total cost/time/distance in a weighted graph with positive weighths
+Typical use cases:
+- Weighted graph (positive weights only)
+- Find shorted path from source to all nodes (positive weights only)
+- Optimize delivery/network/signal time
+- Cost vary and must be minimized
+
+Quick Decision Table
+--------------------
+
+Graph Type                                         Goal                        Use
+__________                                         ____                        ___
+Unweighted                                     Shortest path                   BFS
+Weighted (poositive)                           Shortest path                 Dijkstra
+Weighted (0/1 edges)                           Shortest path                 0-1 BFS
+Weighted (may include negatives)               Shortest path               Bellman-Ford
+Unweighted                            No path required, just explore         BFS/DFS
+Unweighted                            All paths or full tree explore           DFS
+Unweighted                                Early solution needed                BFS
+```
 - [Detect cycle in undirected graph](https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
 - [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)
 - [15. 3Sum](https://leetcode.com/problems/3sum/description)
@@ -57,6 +108,84 @@ Tips: Use BFS/DFS from sorce to destination if question is:
   hint: if this case we are not just checking cycle, we are counting the number of edges we have that makes a cycle (i.e., number of cycles), e.g., A<->B<->C<->A, here C<->A edge can be removed. To do this we need to cache C<->A edge as well, or else we can go through ths edge twice, once via A<->B<->C<->A and once via A<->C. So even if a node is already visited, we need to check if the same edge was used to form a previous cycle.
 - [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/description/)
   hint: the question says, we have to go from a cell to both ocean, so we have one source and two destinations. Hence it is better to do dfs/bfs in reverse. [DFS Code](https://leetcode.com/problems/pacific-atlantic-water-flow/submissions/1677660719/) [BFS Code](https://leetcode.com/problems/pacific-atlantic-water-flow/submissions/1677673026/)
+- [Graph Valid Tree](https://neetcode.io/problems/valid-tree)
+  hint: we can solve this with 2 approaches.
+DFS Traversal Code:
+```
+class Solution:
+    def validTree(self, n: int, edges: List[List[int]]) -> bool:
+        adj = {i: [] for i in range(n)}
+        
+        for u, v in edges:
+            adj[u].append(v)
+            adj[v].append(u)
+        
+        visited = set()
+
+        def dfs(node, parent):
+            # if we are able to reach a node in multiple ways, then it cannot be a tree
+            if node in visited:
+                return False
+            
+            visited.add(node)
+            for nei in adj[node]:
+                if nei == parent:
+                    continue
+                
+                if not dfs(nei, node):
+                    return False
+            
+            return True
+        
+        # We should call this function only once, otherwise it will always return False
+        if not dfs(0, -1):
+            return False
+        
+        # in a graph there should not be any unreachable node
+        if n == len(visited):
+            return True
+        else:
+            return False
+```
+Union Find Code:
+```
+class Solution:
+    def validTree(self, n: int, edges: List[List[int]]) -> bool:
+        adj = {i: [] for i in range(n)}
+        
+        for u, v in edges:
+            adj[u].append(v)
+            adj[v].append(u)
+        
+        visited = set()
+
+        def dfs(node, parent):
+            # if we are able to reach a node in multiple ways, then it cannot be a tree
+            if node in visited:
+                return False
+            
+            visited.add(node)
+            for nei in adj[node]:
+                if nei == parent:
+                    continue
+                
+                if not dfs(nei, node):
+                    return False
+            
+            return True
+        
+        # We should call this function only once, otherwise it will always return False
+        if not dfs(0, -1):
+            return False
+        
+        # in a graph there should not be any unreachable node
+        if n == len(visited):
+            return True
+        else:
+            return False
+```
+Time Complexity: O(V) [because we are always updating parent[x] find function time complexity is very close to 1]
+Space Complexity: O(V) [to store parent array]
 ### Linked List
 `Tip: if we need to maintain order like a list, but also be able to change order of elements inside the list in time O(1), instead of O(n), we should use linked list.`
 
