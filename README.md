@@ -61,6 +61,7 @@ Unweighted                            No path required, just explore         BFS
 Unweighted                            All paths or full tree explore           DFS
 Unweighted                                Early solution needed                BFS
 ```
+`Tip: If we can update a grid during BFS (e.g., Rotting Oranges) then we don't need visited set, but if we can't then we do need visited.`
 - [Detect cycle in undirected graph](https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card)
 - [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)
 - [15. 3Sum](https://leetcode.com/problems/3sum/description)
