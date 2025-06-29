@@ -187,6 +187,8 @@ class Solution:
 ```
 Time Complexity: O(V) [because we are always updating parent[x] find function time complexity is very close to 1]
 Space Complexity: O(V) [to store parent array]
+- [994. Rotting Oranges](https://leetcode.com/problems/rotting-oranges/description/)
+  hint: multi point BFS. [Solution](https://leetcode.com/problems/rotting-oranges/submissions/1680221570/)
 ### Linked List
 `Tip: if we need to maintain order like a list, but also be able to change order of elements inside the list in time O(1), instead of O(n), we should use linked list.`
 
