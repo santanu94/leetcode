@@ -257,6 +257,9 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
 `Tip: if we are computing count, max, min, True/False -> it is likely DP. If we are computing all combinations/answers -> likely backtracking.`
 - [139. Word Break](https://leetcode.com/problems/word-break/description/)
   hint: we can think about splitting a word in to `word = A, B, C, D`. Now we can explore different paths like `word = AB, C, D` or `word = ABC, D` or `word = A, BC, D`. If we memoize D, then we can reuse D multiple times. Lets say combination `A, BC, D` is valid and D is cached. Then we will return True the moment we get to this combination, but memoization helped us reduce computation for combination, `ABC, D` and `A, BC, D` as it was already calculated during `A, B, C, D`.
+### Tree
+- [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)
+  hint: from the preorder we learn the first item is parent, but we are not sure that the second item belongs to left or right (left may be null). We use the inorder to find if the second item is left or roght, if the second item appears before the intext of root in inorder, the second item is left, else right. [Solution](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/submissions/1680842042/)
 ### TODO LIST
 - [Kadane's Algorithm | Maximum Subarray Sum | Finding and Printing](https://www.youtube.com/watch?v=AHZpyENo7k4)
 - [Top 5 Most Common Graph Algorithms for Coding Interviews](https://www.youtube.com/watch?v=utDu3Q7Flrw&t=405s)
