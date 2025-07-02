@@ -260,10 +260,27 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
 ### Tree
 `Tip: if tree values are not unique, reconstruction from Inorder + Preorder/Postorder is not possible. If Preorder/Postorder array has "null" in the list, We can reconstruct the tree easily with just Preorder/Postorder array.`
 `Tip: if we are finding level of a tree and we are not doing 'level = max(level, node_level)' and instead using the last value of node_level, then actual level is 'node_level - 1' because the last level will be all None entries.`
+```
+Tip: Find height of tree:
+class Solution:
+    def findHeight(self, root: Optional[TreeNode]) -> bool:
+        def dfs(node):
+            if not node:
+                return 0
+
+            left_height = dfs(node.left)
+            right_height = dfs(node.right)
+
+            return 1 + max(left_height, right_height)
+
+        return dfs(root)
+```
 - [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)
   hint: from the preorder we learn the first item is parent, but we are not sure that the second item belongs to left or right (left may be null). We use the inorder to find if the second item is left or roght, if the second item appears before the intext of root in inorder, the second item is left, else right. [Solution](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/submissions/1680842042/)
 - [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/)
   hint: [Solution](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/submissions/1681575925/)
+- [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/)
+  hint: [Solution](https://leetcode.com/problems/balanced-binary-tree/submissions/1683371069/)
 ### TODO LIST
 - [Kadane's Algorithm | Maximum Subarray Sum | Finding and Printing](https://www.youtube.com/watch?v=AHZpyENo7k4)
 - [Top 5 Most Common Graph Algorithms for Coding Interviews](https://www.youtube.com/watch?v=utDu3Q7Flrw&t=405s)
