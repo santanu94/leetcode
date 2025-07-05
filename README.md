@@ -245,6 +245,7 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
 
 `Tip: If order is not important, ask yourself this question: If I sort this array, will it make my job easier?`
 `Tip: If we want to left rotate a n array by D steps, we do 1) reverse array[:d] 2) reverse array[d+1:] 3) reverse arr`
+`Tip: A xor A = 0; 0 xor A = A`
 - [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/)
   hint: [video reference](https://www.youtube.com/watch?v=xvNwoz-ufXA)
 - [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
