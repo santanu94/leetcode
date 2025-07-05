@@ -255,6 +255,8 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
   hint: [Solution](https://www.youtube.com/watch?v=sWf7k1x9XR4)
 - [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/)
   hint: [My Submission - easy to understand](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/submissions/1656998875/), [Elegant Solution](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/submissions/1657107800/)
+- [268. Missing Number](https://leetcode.com/problems/missing-number/description/)
+  hint: sum of numbers 0-N is N*(N+1)/2. [Solution](https://leetcode.com/problems/missing-number/submissions/1687783195/). [XOR Solution](https://leetcode.com/problems/missing-number/submissions/1687785076/)
 ### DP and Backtracking
 `Tip: if we are computing count, max, min, True/False -> it is likely DP. If we are computing all combinations/answers -> likely backtracking.`
 - [139. Word Break](https://leetcode.com/problems/word-break/description/)
