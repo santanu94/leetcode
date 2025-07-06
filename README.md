@@ -246,6 +246,7 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
 `Tip: If order is not important, ask yourself this question: If I sort this array, will it make my job easier?`
 `Tip: If we want to left rotate a n array by D steps, we do 1) reverse array[:d] 2) reverse array[d+1:] 3) reverse arr`
 `Tip: A xor A = 0; 0 xor A = A`
+`Tip: if we need to rearrange elements of an array such that the sequence should be +, -, +, -, ... while maintaining order of +ve and - sequences, we can notice that +ve numbers take up odd places and -ve numbers take up even places. (Assumption: no. of +ve = no. of -ve). we can take two variables; pos = 0, neg = 1; for num in nums: if num < 0: result[neg] = num; neg += 2 else result[pos] = num; pos += 2. The two pointers will move independently and eventually fill up the array. If no. of +ve != no. of -ve, then we cannot use this, we should take two arrays: pos_arr, neg_arr and fill them with O(n) and then enter data in another O(n).`
 - [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/)
   hint: [video reference](https://www.youtube.com/watch?v=xvNwoz-ufXA)
 - [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
