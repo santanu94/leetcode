@@ -250,13 +250,19 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
   hint: [video reference](https://www.youtube.com/watch?v=xvNwoz-ufXA)
 - [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)
   hint: if we sort the array, then it becomes easier to merge the groups. Sort, then loop over all entries and check if current start <= prev end current end > previous end. If yes then merge. [Solution code](https://leetcode.com/problems/merge-intervals/submissions/1655509120/)
+- [169. Majority Element](https://leetcode.com/problems/majority-element/description/)
+  hint: [Video Solution](https://www.youtube.com/watch?v=nP_ns3uSh80&list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB&index=7)
+- [268. Missing Number](https://leetcode.com/problems/missing-number/description/)
+  hint: sum of numbers 0-N is N*(N+1)/2. [Solution](https://leetcode.com/problems/missing-number/submissions/1687783195/). [XOR Solution](https://leetcode.com/problems/missing-number/submissions/1687785076/)
+- [75. Sort Colors](https://leetcode.com/problems/sort-colors/description/)
+  hint: [Video Solution](https://www.youtube.com/watch?v=tp8JIuCXBaU&list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB&index=6)
+- [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/)
+  hint: [Solution](https://leetcode.com/problems/majority-element-ii/solutions/4131226/99-7-hashmap-boyer-moore-majority-voting-explained-intuition/)
 ### Binary Tree
 - [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/)
   hint: [Solution](https://www.youtube.com/watch?v=sWf7k1x9XR4)
 - [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/)
   hint: [My Submission - easy to understand](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/submissions/1656998875/), [Elegant Solution](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/submissions/1657107800/)
-- [268. Missing Number](https://leetcode.com/problems/missing-number/description/)
-  hint: sum of numbers 0-N is N*(N+1)/2. [Solution](https://leetcode.com/problems/missing-number/submissions/1687783195/). [XOR Solution](https://leetcode.com/problems/missing-number/submissions/1687785076/)
 ### DP and Backtracking
 `Tip: if we are computing count, max, min, True/False -> it is likely DP. If we are computing all combinations/answers -> likely backtracking.`
 - [139. Word Break](https://leetcode.com/problems/word-break/description/)
