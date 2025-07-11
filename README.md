@@ -259,6 +259,9 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
   hint: [Video Solution](https://www.youtube.com/watch?v=tp8JIuCXBaU&list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB&index=6)
 - [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/description/)
   hint: [Solution](https://leetcode.com/problems/majority-element-ii/solutions/4131226/99-7-hashmap-boyer-moore-majority-voting-explained-intuition/)
+- [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
+  hint: [Video Solution](https://www.youtube.com/watch?v=q6IEA26hvXc)
+- [K-th element of two Arrays](
 ### Binary Tree
 - [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/)
   hint: [Solution](https://www.youtube.com/watch?v=sWf7k1x9XR4)
