@@ -226,7 +226,7 @@ But the better approach is to identify that permutations of all strings will hav
 - [1071. Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/description/)
   hint: [Solution](https://leetcode.com/problems/greatest-common-divisor-of-strings/solutions/3024822/greatest-common-divisor-of-strings/)
 - [32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/)
-  hint: [Two pointer solution](https://www.youtube.com/watch?v=D5b_JWlkXxw)
+  hint: [Two pointer solution](https://www.youtube.com/watch?v=D5b_JWlkXxw), [Stack solution](https://leetcode.com/problems/longest-valid-parentheses/submissions/1696537712/)
 ### Array
 `Tip: If array has both +ve and -ve numbers, we cannot use sliding windoow. In such cases we need prefix sum with hash map`
 
