@@ -261,6 +261,8 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
   hint: [Solution](https://leetcode.com/problems/majority-element-ii/solutions/4131226/99-7-hashmap-boyer-moore-majority-voting-explained-intuition/)
 - [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
   hint: [Video Solution](https://www.youtube.com/watch?v=q6IEA26hvXc)
+- [678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/)
+  hint: [Video Solution](https://www.youtube.com/watch?v=cHT6sG_hUZI)
 - [K-th element of two Arrays](
 ### Binary Tree
 - [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/)
