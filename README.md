@@ -265,6 +265,8 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
   hint: [Video Solution](https://www.youtube.com/watch?v=q6IEA26hvXc)
 - [678. Valid Parenthesis String](https://leetcode.com/problems/valid-parenthesis-string/description/)
   hint: [Video Solution](https://www.youtube.com/watch?v=cHT6sG_hUZI)
+- [135. Candy](https://leetcode.com/problems/candy/description/)
+  hint: [My Solution](https://leetcode.com/problems/candy/submissions/1696880271/) Explanation: We start with the smallest rating and add a candy to it's neighbor if the neighbor has a greater rating. Not all neighbors will be greater, as we move from small rating to large rating, so may have one neighbor greater and one neighbor smaller, so we will only add candy to the greater rating neighbor by current_rating + 1. [Efficient Solution](https://www.youtube.com/watch?v=1IzCRCcK17A)
 - [K-th element of two Arrays](
 ### Binary Tree
 - [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/)
