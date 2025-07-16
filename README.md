@@ -111,6 +111,8 @@ Unweighted                                Early solution needed                B
   hint: the question says, we have to go from a cell to both ocean, so we have one source and two destinations. Hence it is better to do dfs/bfs in reverse. [DFS Code](https://leetcode.com/problems/pacific-atlantic-water-flow/submissions/1677660719/) [BFS Code](https://leetcode.com/problems/pacific-atlantic-water-flow/submissions/1677673026/)
 - [Graph Valid Tree](https://neetcode.io/problems/valid-tree)
   hint: we can solve this with 2 approaches.
+- []()
+  hint: we obviously need to use dijkstra algo, but there is a twist. Unlike dijkstra, we cannot use a visited set or distance dictionary, because in dijkstra we visit each node only once with the cheapest cost, but in this case it is possible that the cheapest path takes up too many intermediate steps and doesn't each the destination, but a more expensive but direct path reaches the destination within the given number of steps. Hence we should explore all paths. [Solution](https://leetcode.com/problems/cheapest-flights-within-k-stops/submissions/1699447383/). This solution has a catch, it takes up too much time for large graphs. In order to optimize the time we can fall back to visited set idea, but instead of removing all paths that lead to node n after the shortest, we cache (node, steps). [Optimized Solution](https://leetcode.com/problems/cheapest-flights-within-k-stops/submissions/1699455697/)
 DFS Traversal Code:
 ```
 class Solution:
