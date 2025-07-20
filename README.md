@@ -328,5 +328,50 @@ class Solution:
 |10	| Order matters (e.g., permutations) | Every number can go to every position | For-loop with visited[] | Track used[] to avoid reusing same index |
 
 
+### Flow Diagram
 
+Start<br>
+  |<br>
+  |-- Are duplicates allowed in the final result?<br>
+  |       |<br>
+  |       |-- ✅ YES<br>
+  |       |      |<br>
+  |       |      |-- Is order important?  (permutations / coin-change-with-order)<br>
+  |       |             |<br>
+  |       |             |-- ✅ YES<br>
+  |       |             |      |<br>
+  |       |             |      |-- Is item-reuse allowed?<br>
+  |       |             |             |<br>
+  |       |             |             |-- ✅ YES  ➜  Classic backtrack over full range<br>
+  |       |             |             |            (permutations **with** repetition)<br>
+  |       |             |             |<br>
+  |       |             |             |-- ❌ NO   ➜  ⚠️  (not covered in the original cheat-sheet)<br>
+  |       |             |<br>
+  |       |             |-- ❌ NO  ➜  ⚠️  (no state in the cheat-sheet: duplicates-allowed + order-irrelevant)<br>
+  |       |<br>
+  |       |-- ❌ NO   (result must be unique)<br>
+  |              |<br>
+  |              |-- Is order important?<br>
+  |                     |<br>
+  |                     |-- ❌ NO   (combinations / subsets family)<br>
+  |                     |      |<br>
+  |                     |      |-- Does the input have duplicates?<br>
+  |                     |             |<br>
+  |                     |             |-- ❌ NO<br>
+  |                     |             |      |<br>
+  |                     |             |      |-- Is item-reuse allowed?<br>
+  |                     |             |             |<br>
+  |                     |             |             |-- ✅ YES  ➜  Pick / Not-Pick<br>
+  |                     |             |             |-- ❌ NO   ➜  For-loop i→n with visited check<br>
+  |                     |             |<br>
+  |                     |             |-- ✅ YES<br>
+  |                     |                    |<br>
+  |                     |                    |-- Is item-reuse allowed?<br>
+  |                     |                           |<br>
+  |                     |                           |-- ✅ YES  ➜  Sort + skip duplicates **only** on new branches<br>
+  |                     |                           |-- ❌ NO   ➜  Sort input + skip duplicates **inside** loop<br>
+  |                     |<br>
+  |                     |-- ✅ YES   (permutations without repetition)<br>
+  |                              |<br>
+  |                              |-- ➜  Backtrack with used[] / boolean visited[]<br>
 ---
