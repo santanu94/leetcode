@@ -317,7 +317,7 @@ class Solution:
 | | Constraint Summary	                               | Problem Scenario	| Strategy / Thought Process	| Notes / Edge Handling |
 |-|----------------------------------------------------|------------------|------------------------------|----------------------|
 |1 |	✅ Reuse allowed, ❌ Duplicates allowed in result	| Use each number unlimited times (e.g., Combination Sum) |	Pick / Not Pick |	Stay at i when picking, move to i + 1 when not picking |
-|2 | ❌ Reuse allowed, ❌ Duplicates allowed in result	| Each number used at most once (e.g., Subsets, Combination Sum II)	| For-loop from i to n with visited check	Use i + 1 in recursive call |
+|2 | ❌ Reuse allowed, ❌ Duplicates allowed in result	| Each number used at most once (e.g., Subsets, Combination Sum II)	| For-loop from i to n with visited check | Use i + 1 in recursive call |
 |3 | ❌ Reuse allowed, ✅ Duplicates in input, ❌ Duplicates allowed in result	| Each number once, input has duplicates (e.g., Combination Sum II)	| Sort input + skip duplicates in loop | Check: if i > start and candidates[i] == candidates[i-1]: continue |
 |4 | ✅ Reuse allowed, ✅ Duplicates in input, ❌ Duplicates allowed in result	| Use same number multiple times, but input has duplicates (e.g., infinite supply) | Sort + Skip duplicates only when exploring new branches | Still Pick/Not Pick style, but with duplicate skipping |
 |5 | ✅ Reuse allowed, ✅ Duplicates in result allowed | Permutations with repetition (e.g., coin change with order) | Classic backtrack over full range | Do not skip duplicates, order matters |
