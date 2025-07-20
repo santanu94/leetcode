@@ -311,3 +311,22 @@ class Solution:
 - [House Robber - Leetcode 198 - Python Dynamic Programming](https://www.youtube.com/watch?v=73r3KWiEvyk)
 - [L15. Sudoko Solver | Backtracking](https://www.youtube.com/watch?v=FWAIf_EVUKE)
 - [213. House Robber II](https://leetcode.com/problems/house-robber-ii/)
+
+# 🧠 Backtracking Strategy Cheat Sheet
+
+| | Constraint Summary	                               | Problem Scenario	| Strategy / Thought Process	| Notes / Edge Handling |
+|-|----------------------------------------------------|------------------|------------------------------|----------------------|
+|1 |	✅ Reuse allowed, ❌ Duplicates allowed in result	| Use each number unlimited times (e.g., Combination Sum) |	Pick / Not Pick |	Stay at i when picking, move to i + 1 when not picking |
+|2 | ❌ Reuse allowed, ❌ Duplicates allowed in result	| Each number used at most once (e.g., Subsets, Combination Sum II)	| For-loop from i to n with visited check	Use i + 1 in recursive call |
+|3 | ❌ Reuse allowed, ✅ Duplicates in input, ❌ Duplicates allowed in result	| Each number once, input has duplicates (e.g., Combination Sum II)	| Sort input + skip duplicates in loop | Check: if i > start and candidates[i] == candidates[i-1]: continue |
+|4 | ✅ Reuse allowed, ✅ Duplicates in input, ❌ Duplicates allowed in result	| Use same number multiple times, but input has duplicates (e.g., infinite supply) | Sort + Skip duplicates only when exploring new branches | Still Pick/Not Pick style, but with duplicate skipping |
+|5 | ✅ Reuse allowed, ✅ Duplicates in result allowed | Permutations with repetition (e.g., coin change with order) | Classic backtrack over full range | Do not skip duplicates, order matters |
+|6 | ❌ Reuse allowed, ✅ Duplicates in input, ❌ Duplicates allowed in result | Permutations without repetition (e.g., Permutations II) | Backtrack with used[] or boolean visited[] | Also sort + skip same value if used[i - 1] is False |
+|7 | Subset generation | All combinations regardless of sum (e.g., power set) | Pick / Not Pick | No need to track sum; just include/exclude each |
+|8 | Fixed size k-subsets | Choose k items only (e.g., Combinations) | Backtrack with count | Stop recursion when len(cur) == k |
+|9 | Target sum combinations, values > 0 | Subset sum problems with pruning | Sort + break early when candidates[i] > target | Optimizes time significantly |
+|10	| Order matters (e.g., permutations) | Every number can go to every position | For-loop with visited[] | Track used[] to avoid reusing same index |
+
+
+
+---
