@@ -277,6 +277,7 @@ Tip: For prefix sum hash map problems, if array contains +ve and -ve numbers the
   hint: [My Submission - easy to understand](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/submissions/1656998875/), [Elegant Solution](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/submissions/1657107800/)
 ### DP and Backtracking
 `Tip: if we are computing count, max, min, True/False -> it is likely DP. If we are computing all combinations/answers -> likely backtracking.`
+`Tip: if we are given that we no two adjacent items in a list can be used, then we should think like this -> take current (nums[i] + recur(i-2)) or ignore current (recur(i-1))`
 - [139. Word Break](https://leetcode.com/problems/word-break/description/)
   hint: we can think about splitting a word in to `word = A, B, C, D`. Now we can explore different paths like `word = AB, C, D` or `word = ABC, D` or `word = A, BC, D`. If we memoize D, then we can reuse D multiple times. Lets say combination `A, BC, D` is valid and D is cached. Then we will return True the moment we get to this combination, but memoization helped us reduce computation for combination, `ABC, D` and `A, BC, D` as it was already calculated during `A, B, C, D`.
 - [39. Combination Sum](https://leetcode.com/problems/combination-sum/description/)
