@@ -201,6 +201,7 @@ Tip: If we are frequently inserting or deleting nodes at both ends (head/tail) o
 if node.next is not None and node.prev is not None:
   node.next.prev = node.prev.Next
 ```
+`Tip: Use slow pointer and fast pointer to find middle of linked list or to check if linked list has a circle.`
 - [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)
   hint: in order to remove node we need prev node, but here there is no way of accessing prev node. So we will instead traverse the linked list till the end and replace current node value with next value and finally drop the last node.
 - [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/)
